@@ -2,6 +2,7 @@
 .AppleDouble
 .LSOverrible
 .vs
+.idea
 
 node_modules/
 dist/

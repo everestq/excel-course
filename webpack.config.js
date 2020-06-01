@@ -1,5 +1,5 @@
 const path = require('path')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -53,7 +53,7 @@ module.exports = {
       minify: {
         removeComments: isProd,
         collapseWhitespace: isProd
-      }
+      },
     }),
     new CopyPlugin([
       {
@@ -81,12 +81,11 @@ module.exports = {
           'sass-loader'
         ],
       },
-      { 
-        test: /\.js$/, 
-        exclude: /node_modules/, 
-        use: jsLoaders(),
-        
-      },
-    ],
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: jsLoaders()
+      }
+    ]
   }
 }
